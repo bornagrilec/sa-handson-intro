@@ -1,0 +1,272 @@
+/*
+ background: url('img/features_bg-md.jpg') rgba(0, 0, 0, 0.69);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-blend-mode: multiply;
+*/
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1, 
+h2 {
+    margin: 0;
+}
+
+p {
+    line-height: 150%;
+    font-size: 18px;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 160px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #c59613;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: #9e7911;
+}
+
+/* Header */
+.header-main {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+.header-main__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    width: 80px;
+    height: 70px;
+    margin-top: 5px;
+    float: left;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-main__nav {
+    float: right;
+}
+
+.header-main__nav ul {
+    list-style: none;
+}
+
+.header-main__nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 50px;
+}
+
+.header-main__nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header-main__nav ul li a {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease-out;
+}
+
+.header-main__nav ul li a:hover {
+    color: #c59613;
+}
+
+/* Section Hero */
+.section-hero {
+    position: relative;
+    margin-top: 80px;
+    height: 500px;
+    background: url('./images/event.jpg') rgba(0, 0, 0, 0.69);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.section-hero__data-container {
+    position: absolute;
+    z-index: 1;
+    left: calc((100% - 400px) / 2);
+    top: calc((100% - 250px) / 2);
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.section-hero__title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-hero__organizer {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #c59613;
+    margin-bottom: 30px;
+}
+
+.section-hero__date {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-hero__data-container .btn {
+    margin: 0 auto;
+}
+
+/* Section More */
+.section-more {
+    padding: 70px 0;
+    overflow-y: hidden;
+}
+
+/* Component about */
+.about {
+    margin-bottom: 70px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about .btn {
+    margin: 0 auto;
+}
+
+/* Component cards */
+.cards {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.cards::after {
+    clear: both;
+}
+
+.card {
+    width: calc(25% - 11.25px);
+    margin-right: 15px;
+    margin-bottom: 40px;
+    float: left;
+    height: auto;
+    padding: 15px 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card:last-of-type {
+    margin-right: 0;
+}
+
+.card figure {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Section Last Year */
+.section-last-year {
+    clear: both;
+    overflow: hidden;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.section-last-year__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-last-year h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.section-last-year p {
+    width: 50%;
+    float: left;
+    padding-right: 150px;
+    margin-top: 70px;
+}
+
+.section-last-year figure {
+    width: 50%;
+    float: left;
+    height: 350px;
+}
+
+.section-last-year figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
