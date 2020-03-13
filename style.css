@@ -178,12 +178,12 @@ p {
 }
 
 /* Component cards */
-.cards-container {
+.cards {
     width: 1280px;
     margin: 0 auto;
 }
 
-.cards-container::after {
+.cards::after {
     clear: both;
 }
 
