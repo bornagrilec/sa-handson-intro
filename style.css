@@ -334,10 +334,19 @@ p {
     flex: 1 0 25px;
     width: 25px;
     height: 25px;
-    background: url(./images/event-icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-right: 15px;
+}
+
+.info-box__icon_type-event {
+    background: url(./images/event-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info-box__icon_type-speaker {
+    background: url(./images/speakers-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .info-box__title {
