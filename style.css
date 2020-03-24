@@ -12,6 +12,7 @@ body {
 main {
     width: 100%;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 a {
@@ -27,6 +28,12 @@ h2 {
 p {
     line-height: 150%;
     font-size: 18px;
+}
+
+.page-title {
+    text-align: center;
+    padding: 30px 0 60px;
+    font-size: 30px;
 }
 
 /* Buttons */
@@ -76,7 +83,14 @@ p {
 }
 
 .header-main__nav {
-    float: right;
+    display: none;
+}
+
+@media only screen and (min-width: 1024px){
+    .header-main__nav {
+        display: block;
+        float: right;
+    }
 }
 
 .header-main__nav ul {
@@ -107,7 +121,6 @@ p {
 /* Section Hero */
 .section-hero {
     position: relative;
-    margin-top: 80px;
     height: 500px;
     background: url('./images/event.jpg') rgba(0, 0, 0, 0.69);
     background-size: cover;
@@ -261,4 +274,119 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Section Events */
+.section-events {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-events .info-box {
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 576px){
+    .section-events .info-box {
+        margin: inherit;
+    } 
+
+    .section-events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .section-events {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .section-events {
+        gap: 30px;
+        padding: 0;
+    }
+}
+
+/* Info Box - Component */
+.info-box {
+    background: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+} 
+
+.info-box__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.info-box__icon {
+    flex: 1 0 25px;
+    width: 25px;
+    height: 25px;
+    background: url(./images/event-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.info-box__title {
+    font-size: 18px;
+}
+
+.info-box__subheader {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.info-box__subheader-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box__subheader-figure {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.info-box__subheader-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-box__about {
+    padding: 25px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+.info-box__footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.info-box__btn-join {
+    font-weight: bold;
+    transition: color 0.3s ease-out;
+}
+
+.info-box__btn-join:hover {
+    color: #58a510;
 }
